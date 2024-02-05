@@ -40,10 +40,10 @@ const getDateTimeFormat = (timezone, options = {}) => {
 const localeStringifierCache = {}
 const getLocaleStringifier = (timezone) => {
   let localeStringifier = localeStringifierCache[timezone]
-  if(!localeStringifier) {
+  if (!localeStringifier) {
     localeStringifier = new Intl.DateTimeFormat('en-US', {
       ...dateTimeFormatDefaults,
-      timeZone: timezone,
+      timeZone: timezone
     })
     localeStringifierCache[timezone] = localeStringifier
   }
