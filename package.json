@@ -46,9 +46,12 @@
   "author": "iamkun",
   "license": "MIT",
   "homepage": "https://day.js.org",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iamkun/dayjs.git"
+    "url": "https://github.com/calcom/dayjs.git"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.44",
